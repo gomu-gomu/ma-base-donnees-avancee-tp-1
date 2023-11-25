@@ -14,3 +14,26 @@ oracle.install.db.OSKMDBA_GROUP=dba
 oracle.install.db.OSRACDBA_GROUP=dba
 SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
 DECLINE_SECURITY_UPDATES=true
+
+# Parameters for database creation
+oracle.install.db.config.starterdb.SID=ORACLE
+oracle.install.db.config.starterdb.globalDBName=ORACLE
+oracle.install.db.config.starterdb.type=GENERAL_PURPOSE
+oracle.install.db.config.starterdb.characterSet=AL32UTF8
+oracle.install.db.config.starterdb.memoryOption=auto_sga
+oracle.install.db.config.starterdb.memoryLimit=1536
+oracle.install.db.config.starterdb.installExampleSchemas=false
+oracle.install.db.config.starterdb.installEdition=EE
+oracle.install.db.config.starterdb.enableRecovery=false
+oracle.install.db.config.starterdb.datafileDestination=/u01/app/oracle/oradata/
+oracle.install.db.config.starterdb.redoLogFileSize=50
+oracle.install.db.config.starterdb.numberOfPDBs=1
+oracle.install.db.config.starterdb.createAsContainerDatabase=true
+oracle.install.db.config.starterdb.createAsContainerDatabase.numberOfPDBs=1
+oracle.install.db.config.starterdb.createAsContainerDatabase.name=pdb3
+oracle.install.db.config.starterdb.createAsContainerDatabase.adminPassword=very_STRONG_p055w0rd
+oracle.install.db.config.starterdb.createAsContainerDatabase.adminPasswordConfirm=very_STRONG_p055w0rd
+oracle.install.db.config.starterdb.createAsContainerDatabase.pluggableDatabaseStorageOption=FS
+oracle.install.db.config.starterdb.createAsContainerDatabase.datafileDestination=/u01/app/oracle/oradata/
+oracle.install.db.config.starterdb.createAsContainerDatabase.emExpressPort=5500
+oracle.install.db.config.starterdb.createAsContainerDatabase.enableEmExpress=false
