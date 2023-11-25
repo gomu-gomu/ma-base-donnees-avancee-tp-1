@@ -15,7 +15,7 @@ ALTER SYSTEM SET SHARED_POOL_SIZE = 80M;
 Select SUM(PINS) "Executions", SUM(RELOADS) "Defaut de cache", SUM(RELOADS) / (SUM(RELOADS) + Sum(PINS)) * 100 "Rapport" FROM V$librarycache;
 -- Reloads: Nombre de demandes infructueuses
 -- Pins : Nombre d’exécutions sans défaut de cache
--- il faut augmenter la taille si le résultant est >= 0.1%
+-- il faut augmenter la taille si le résultant est >= 1%
 
 -- 5 - Vérifier s'il faut augmenter la taille du library cache.
 Select SUM(RELOADS) / (SUM(RELOADS) + Sum(PINS)) * 100 "R" FROM V$librarycache;
