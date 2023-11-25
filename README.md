@@ -34,7 +34,7 @@ Finally, Upon executing the `run.sh` script, the process will not only update th
 ./run.sh
 ```
 
-> **Note**: You can also access the web ui via `https://localhost:5500/em/shell`.
+> **Note**: You can also access the web ui via https://localhost:5500/em/shell.
 ```
 Username: system
 Password: password

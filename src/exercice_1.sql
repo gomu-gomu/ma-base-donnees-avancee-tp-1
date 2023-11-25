@@ -1,3 +1,5 @@
+-- Exercice 1
+
 -- 1 - Afficher les champs de la vue V$memory_dynamic_components
 SELECT COLUMN_NAME FROM ALL_TAB_COLUMNS WHERE TABLE_NAME = 'V$memory_dynamic_components';
 
