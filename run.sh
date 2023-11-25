@@ -1,1 +1,2 @@
-docker run --name oracle19c -p 1521:1521 -p 5500:5500 -v "$(pwd)/src/db"/opt/oracle/oradata oracle/database:19.3.0-ee
+docker exec oracle19c ./setPassword.sh password
+docker exec -ti oracle19c sqlplus system/password@orclpdb1
