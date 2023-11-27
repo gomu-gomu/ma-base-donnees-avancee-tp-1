@@ -122,7 +122,7 @@ declare -a BUILD_OPTS
 MIN_DOCKER_VERSION="17.09"
 MIN_PODMAN_VERSION="1.6.0"
 DOCKERFILE="Dockerfile"
-IMAGE_NAME=""
+IMAGE_NAME="eoussama/oracle-database"
 
 if [ "$#" -eq 0 ]; then
   usage;
